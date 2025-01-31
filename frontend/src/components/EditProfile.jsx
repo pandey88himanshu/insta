@@ -49,7 +49,7 @@ const EditProfile = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/api/v1/user/profile/edit`,
+        `https://insta-bo5p.onrender.com/api/v1/user/profile/edit`,
         formData,
         {
           headers: {

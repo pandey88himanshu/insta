@@ -32,9 +32,7 @@ const Profile = () => {
   const handleFollow = async () => {
     try {
       const response = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/api/v1/user/followorunfollow/${
-          userProfile?._id
-        }`,
+        `https://insta-bo5p.onrender.com/api/v1/user/followorunfollow/${userProfile?._id}`,
         {},
         {
           withCredentials: true, // if you are using cookies for authentication

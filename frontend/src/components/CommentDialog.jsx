@@ -34,9 +34,7 @@ const CommentDialog = ({ open, setOpen }) => {
   const sendMessageHandler = async () => {
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/api/v1/post/${
-          selectedPost?._id
-        }/comment`,
+        `https://insta-bo5p.onrender.com/api/v1/post/${selectedPost?._id}/comment`,
         { text },
         {
           headers: {

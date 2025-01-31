@@ -9,7 +9,7 @@ const useGetAllPost = () => {
     const fetchAllPost = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_BASE_URL}/api/v1/post/all`,
+          `https://insta-bo5p.onrender.com/api/v1/post/all`,
           {
             withCredentials: true,
           }

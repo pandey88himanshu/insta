@@ -20,9 +20,7 @@ const ChatPage = () => {
   const sendMessageHandler = async (receiverId) => {
     try {
       const res = await axios.post(
-        `${
-          import.meta.env.VITE_API_BASE_URL
-        }/api/v1/message/send/${receiverId}`,
+        `https://insta-bo5p.onrender.com/api/v1/message/send/${receiverId}`,
         { textMessage },
         {
           headers: {

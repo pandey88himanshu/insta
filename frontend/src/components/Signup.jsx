@@ -26,7 +26,7 @@ const Signup = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/api/v1/user/register`,
+        `https://insta-bo5p.onrender.com/api/v1/user/register`,
         input,
         {
           headers: {

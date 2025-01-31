@@ -10,7 +10,7 @@ const useGetUserProfile = (userId) => {
     const fetchUserProfile = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_BASE_URL}/api/v1/user/${userId}/profile`,
+          `https://insta-bo5p.onrender.com/api/v1/user/${userId}/profile`,
           { withCredentials: true }
         );
         if (res.data.success) {

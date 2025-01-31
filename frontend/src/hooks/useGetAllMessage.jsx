@@ -13,9 +13,7 @@ const useGetAllMessage = () => {
     const fetchAllMessages = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_BASE_URL}/api/v1/message/all/${
-            selectedUser._id
-          }`,
+          `https://insta-bo5p.onrender.com/api/v1/message/all/${selectedUser._id}`,
           { withCredentials: true }
         );
         if (res.data.success) {

@@ -75,7 +75,7 @@ function App() {
 
   useEffect(() => {
     if (user) {
-      const socketio = io(`${import.meta.env.VITE_API_BASE_URL}`, {
+      const socketio = io(`https://insta-bo5p.onrender.com`, {
         query: {
           userId: user?._id,
         },

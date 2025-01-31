@@ -9,7 +9,7 @@ const useGetSuggestedUsers = () => {
     const fetchSuggestedUsers = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_BASE_URL}/api/v1/user/suggested`,
+          `https://insta-bo5p.onrender.com/api/v1/user/suggested`,
           { withCredentials: true }
         );
         if (res.data.success) {
